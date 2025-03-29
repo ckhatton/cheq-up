@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
@@ -15,8 +15,10 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
+@reference 'tailwindcss';
+
 .logo {
-  height: 6em;
+  @apply w-32 h-32;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
