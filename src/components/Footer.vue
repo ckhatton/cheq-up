@@ -1,6 +1,6 @@
 <template>
   <footer class="absolute bottom-0 flex justify-center items-center text-center text-white">
-    <img class="logo" src="../assets/logo-cheq-up-on-dark.svg" alt="CheqUp" title="CheqUp" />
+    <img class="logo" src="../assets/images/logoCheqUpOnDark.svg" alt="CheqUp" title="CheqUp" />
   </footer>
 </template>
 

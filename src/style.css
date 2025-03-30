@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import 'tailwindcss';
+
+@font-face {
+  font-family: Museo;
+  font-display: swap;
+  src: url('./assets/fonts/museoSansRounded900.otf') format('opentype');
+}
+
+@theme {
+  --font-museo: Museo, sans-serif;
+  --font-poppins: Poppins, sans-serif;
+}
 
 :root {
   --colour-purple: #4b199d;
