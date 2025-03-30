@@ -10,7 +10,7 @@ export default {
   transform: {
     '^.+\\.vue$': '@vue/vue3-jest',
     '^.+\\.(js|ts)$': 'babel-jest',
-    '^.+\\.svg$': '<rootDir>/jest.transform.svg.js',
+    '^.+\\.(css|less|sass|scss|png|jpg|gif|ttf|woff|woff2|svg)$': 'jest-transform-stub',
   },
   testEnvironmentOptions: {
     customExportConditions: ['node', 'node-addons'],
