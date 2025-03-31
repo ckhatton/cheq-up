@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import Footer from '../../src/components/Footer.vue';
+import Footer from '../../src/components/BaseFooter.vue';
 
 describe('Visibility', () => {
   it('renders the component', () => {

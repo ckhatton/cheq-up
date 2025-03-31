@@ -14,8 +14,8 @@ describe('Visibility', () => {
 
   it('contains the correct content', () => {
     const wrapper = mount(PurchaseConfirmation);
-    expect(wrapper.text).toContain('Thank you for your purchase');
-    expect(wrapper.text).toContain('Your order number is');
+    expect(wrapper.text()).toContain('Thank you for your purchase');
+    expect(wrapper.text()).toContain('Your order number is');
   });
 });
 
