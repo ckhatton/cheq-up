@@ -1,6 +1,6 @@
 <template>
   <div
-    class="confirmation bg-cheq-up-green-dark h-21 rounded-lg mb-6 px-5 text-white flex flex-col justify-center"
+    class="confirmation bg-cheq-up-green-dark rounded-lg mb-6 px-5 py-4 text-white flex flex-col justify-center"
     aria-label="Purchase Confirmation"
   >
     <h2 class="font-museo text-md mb-2">Thank you for your purchase</h2>
