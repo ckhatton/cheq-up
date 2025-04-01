@@ -10,6 +10,7 @@ Uses:
   - For a speedy server.
 - [Vue](https://vuejs.org)
   - Nuxt was not added, as server-side are not required for the build.
+  - Composition API was used, just to prove I can use it. Options API is preferred, as I argue that scripts should not be so large and complex to have to use Composition API - instead they should be broken down into smaller files.
 - [Jest](https://jestjs.io)
   - As Vitest does not work with Bun at the time of writing.
 
