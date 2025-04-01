@@ -19,13 +19,15 @@ describe('Visibility', () => {
   });
 });
 
-describe('Visibility', () => {
-  it('renders order number', () => {
-    const orderNumber = 'CHEQ-5763';
-    const wrapper = mount(PurchaseConfirmation, {
-      props: { orderNumber },
+describe('Props', () => {
+  describe('Order Number:', () => {
+    it('renders order number', () => {
+      const orderNumber = 'CHEQ-5763';
+      const wrapper = mount(PurchaseConfirmation, {
+        props: { orderNumber },
+      });
+      expect(wrapper.text()).toContain(`Your order number is ${orderNumber}.`);
     });
-    expect(wrapper.text()).toContain(`Your order number is ${orderNumber}.`);
   });
 });
 
