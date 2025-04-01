@@ -1,10 +1,11 @@
 <template>
   <div class="max-w-4xl mx-auto py-8">
-    <PurchaseConfirmation />
+    <PurchaseConfirmation order-number="CHEQ-5763" />
 
-    <Warning />
+    <Warning :steps="3" /><!-- steps: 0, 1, 2, 3 -->
 
     <Step state="active" :step="1" title="ID Verification">
+      <!-- state: 'active', 'error', 'completed', 'disabled' -->
       <p class="font-poppins text-xs mb-1">
         To comply with UK medicines regulations, we need to confirm the identity of all our clients
         - this includes verifying your ID and your current height and weight. This information is

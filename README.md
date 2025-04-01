@@ -2,6 +2,8 @@
 
 This is a build of the CheqUp order confirmation page, from my design of the steps needed to fully complete the order.
 
+You can toggle the props in `/src/App.vue` to view the DOM changes.
+
 Uses:
 
 - [Bun 🍞](https://bun.sh)
