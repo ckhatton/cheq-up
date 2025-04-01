@@ -8,11 +8,8 @@
 }
 
 @theme {
+  --color-cheq-up-green-dark: #047a8e;
+  --color-cheq-up-purple: #4b199d;
   --font-museo: Museo, sans-serif;
   --font-poppins: Poppins, sans-serif;
-}
-
-:root {
-  --colour-green-dark: #047a8e;
-  --colour-purple: #4b199d;
 }

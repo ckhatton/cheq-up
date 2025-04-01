@@ -1,5 +1,7 @@
 <template>
-  <footer class="absolute bottom-0 flex justify-center items-center text-center text-white">
+  <footer
+    class="absolute bottom-0 bg-cheq-up-purple flex justify-center items-center text-center text-white"
+  >
     <img class="logo" src="../assets/images/logoCheqUpOnDark.svg" alt="CheqUp" title="CheqUp" />
   </footer>
 </template>
@@ -8,7 +10,6 @@
 footer {
   width: 100%;
   height: 80px;
-  background-color: var(--colour-purple);
 }
 
 .logo {

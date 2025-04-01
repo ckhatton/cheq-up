@@ -1,6 +1,6 @@
 <template>
   <div
-    class="confirmation h-21 rounded-lg px-5 text-white flex flex-col justify-center"
+    class="confirmation bg-cheq-up-green-dark h-21 rounded-lg px-5 text-white flex flex-col justify-center"
     aria-label="Purchase Confirmation"
   >
     <h2 class="font-museo text-md mb-2">Thank you for your purchase</h2>
@@ -18,9 +18,3 @@ withDefaults(
   }
 );
 </script>
-
-<style lang="css" scoped>
-.confirmation {
-  background-color: var(--colour-green-dark);
-}
-</style>
