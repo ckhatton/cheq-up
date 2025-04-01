@@ -1,7 +1,5 @@
 <template>
-  <footer
-    class="absolute bottom-0 bg-cheq-up-purple flex justify-center items-center text-center text-white"
-  >
+  <footer class="bg-cheq-up-purple flex justify-center items-center text-center text-white">
     <img class="logo" src="../assets/images/logoCheqUpOnDark.svg" alt="CheqUp" title="CheqUp" />
   </footer>
 </template>
