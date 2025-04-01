@@ -48,7 +48,7 @@ describe('Props', () => {
       const wrapper = mount(Warning, {
         props: { steps },
       });
-      expect(wrapper.exists()).toBe(false);
+      expect(wrapper.find('.warning').exists()).toBe(false);
     });
   });
 });
