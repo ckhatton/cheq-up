@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@font-face {
+  font-family: Museo;
+  font-display: swap;
+  src: url('./assets/fonts/museoSansRounded900.otf') format('opentype');
+}
+
+@theme {
+  --color-cheq-up-green-dark: #047a8e;
+  --color-cheq-up-green-light: #b2dee4;
+  --color-cheq-up-grey-light: #eeeeee;
+  --color-cheq-up-grey-dark: #6c6e70;
+  --color-cheq-up-purple: #4b199d;
+  --color-cheq-up-red: #ff0000;
+  --color-cheq-up-orange: #ee6d3f;
+  --color-cheq-up-yellow: #ffcc00;
+  --font-museo: Museo, sans-serif;
+  --font-poppins: Poppins, sans-serif;
+}
+
+.button {
+  @apply bg-cheq-up-orange text-white font-museo px-8 py-2 rounded-full cursor-pointer;
+}
+.button.input {
+  @apply pr-7 rounded-r-none;
+}
+.button + input {
+  @apply bg-cheq-up-grey-light text-cheq-up-grey-light w-full py-2 rounded-l-none rounded-r-full;
+}
+.disabled .button {
+  @apply bg-cheq-up-grey-dark cursor-default;
+}
+.disabled input {
+  @apply cursor-default;
+}
