@@ -66,6 +66,12 @@ bun run --bun dev
 bun run test
 ```
 
+### To Create a Coverage Report
+
+```bash
+bun run test --coverage
+```
+
 ## To Preview
 
 ```bash
