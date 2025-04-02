@@ -5,7 +5,7 @@
     aria-label="Warning"
   >
     <div class="flex flex-row justify-start items-center">
-      <div>
+      <div class="shrink-0">
         <img src="../assets/images/triangleExclamationSolid.svg" alt="Warning" class="mr-4" />
       </div>
       <div class="flex flex-col justify-center">

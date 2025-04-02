@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto py-8">
+  <div class="max-w-4xl mx-auto px-6 py-8">
     <PurchaseConfirmation order-number="CHEQ-5763" />
 
     <Warning :steps="steps" /><!-- steps: 0, 1, 2, 3 -->
@@ -37,8 +37,8 @@
       </div>
     </Step>
 
-    <div class="flex justify-center items-center my-12 px-16 text-center">
-      <p v-if="steps === 0" class="font-museo text-cheq-up-purple text-5xl">
+    <div class="flex justify-center items-center my-4 md:my-12 px-8 md:px-16 text-center">
+      <p v-if="steps === 0" class="font-museo text-cheq-up-purple text-4xl/11 md:text-5xl/14">
         Thank you for taking the time to complete the extra steps.
       </p>
     </div>
