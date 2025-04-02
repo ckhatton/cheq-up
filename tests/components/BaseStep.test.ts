@@ -101,7 +101,7 @@ describe('Props', () => {
       const wrapper = mount(Step, {
         props: { state, title },
       });
-      expect(wrapper.find('.border-cheq-up-grey').exists()).toBe(true);
+      expect(wrapper.find('.border-cheq-up-grey-light').exists()).toBe(true);
     });
   });
 });

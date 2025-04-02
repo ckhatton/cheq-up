@@ -16,6 +16,26 @@
         <span class="font-poppins text-xs font-bold">Verification ID with Persona</span>
       </div>
     </Step>
+
+    <Step state="disabled" :step="2" title="Head-to-Toe Picture">
+      <!-- state: 'active', 'error', 'completed', 'disabled' -->
+      <p class="font-poppins text-xs mb-3">
+        We ask for a recent photo that shows you from head-to-toe. The photo can be taken against a
+        mirror but must show you from head-to-toe. Please wear clothing that clearly shows your body
+        shape (no baggy clothes please).
+      </p>
+      <p class="font-poppins text-xs underline mb-1">
+        Click here to see what images we will accept.
+      </p>
+      <p class="font-poppins text-xs underline mb-1">Why do we ask?</p>
+      <div class="flex justify-start items-center mt-3">
+        <div class="button input shrink-0">Choose image</div>
+        <input type="file" accept="image/*" />
+      </div>
+      <div class="flex justify-start items-center mt-3">
+        <div class="button">Upload</div>
+      </div>
+    </Step>
   </div>
 
   <Footer />

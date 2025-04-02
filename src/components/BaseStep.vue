@@ -1,14 +1,14 @@
 <template>
   <div
     :class="[stepStateColour]"
-    class="step rounded-lg mb-6 pl-4 pr-5 py-5 flex"
+    class="step rounded-lg mb-6 pl-4 pr-8 py-5 flex"
     :aria-label="ariaLabel"
   >
     <div class="flex flex-row justify-start">
       <div>
         <div
           :class="[stepNumberStateColour]"
-          class="step-number rounded-full w-16 h-16 ml-1 mr-4 font-museo text-4xl flex items-center justify-center"
+          class="step-number rounded-full w-16 h-16 mr-4 font-museo text-4xl flex items-center justify-center"
         >
           {{ step }}
         </div>
@@ -59,8 +59,8 @@ const stepStateColour = computed<string>(() => {
       active: 'border-2 border-cheq-up-green-dark',
       error: 'border-2 border-cheq-up-red',
       completed: 'bg-cheq-up-green-dark',
-      disabled: 'disabled border-2 border-cheq-up-grey',
-    }[props.state] ?? 'border-cheq-up-grey'
+      disabled: 'disabled border-2 border-cheq-up-grey-light',
+    }[props.state] ?? 'border-cheq-up-grey-light'
   );
 });
 
@@ -68,7 +68,7 @@ const stepNumberStateColour = computed<string>(() => {
   return (
     {
       completed: 'bg-cheq-up-green-light text-cheq-up-green-dark',
-      disabled: 'bg-cheq-up-grey text-white',
+      disabled: 'bg-cheq-up-grey-light text-white',
     }[props.state] ?? 'bg-cheq-up-green-dark text-white'
   );
 });
