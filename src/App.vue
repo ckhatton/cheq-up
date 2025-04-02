@@ -2,7 +2,7 @@
   <div class="max-w-4xl mx-auto py-8">
     <PurchaseConfirmation order-number="CHEQ-5763" />
 
-    <Warning :steps="3" /><!-- steps: 0, 1, 2, 3 -->
+    <Warning :steps="steps" /><!-- steps: 0, 1, 2, 3 -->
 
     <Step state="active" :step="1" title="ID Verification">
       <!-- state: 'active', 'error', 'completed', 'disabled' -->
@@ -36,6 +36,12 @@
         <div class="button">Upload</div>
       </div>
     </Step>
+
+    <div class="flex justify-center items-center my-12 px-16 text-center">
+      <p v-if="steps === 0" class="font-museo text-cheq-up-purple text-5xl">
+        Thank you for taking the time to complete the extra steps.
+      </p>
+    </div>
   </div>
 
   <Footer />
@@ -46,4 +52,8 @@ import Footer from './components/BaseFooter.vue';
 import PurchaseConfirmation from './components/BasePurchaseConfirmation.vue';
 import Step from './components/BaseStep.vue';
 import Warning from './components/BaseWarning.vue';
+
+import { ref } from 'vue';
+
+const steps = ref(2); // 0, 1, 2, 3
 </script>
